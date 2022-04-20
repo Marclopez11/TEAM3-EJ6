@@ -40,6 +40,14 @@ public class Pelicula {
 	public void setDirector(String director) {
 		this.director = director;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Pelicula és  [titulo=" + titulo + ", con la  duracion" + duracion + ",la  edad minima es " + edadMinima + ", director="
+				+ director + "]";
+	}
+	
 	
 	
 	
