@@ -93,4 +93,24 @@ public class Espectador {
 		return "Espectador [nombre=" + nombre + ", edad=" + edad + ", dinero=" + dinero + "]";
 	}
 	
+	public static void buscarAsiento(Cine c, int espectadores) {
+		int[] filas = c.getFilas();
+		String[] columnas = { "AX", "BX", "CX", "DX", "EX", "FX", "GX", "HX", "IX" };
+		
+		int contador = 0;
+		
+		for (int i = 0; i < filas.length; i++) {
+			for (int j = 0; j < columnas.length; j++) {
+				if (columnas[j].charAt(0) == 'I') {
+					System.out.println("");
+				}
+				
+					System.out.print(filas[i] + columnas[j] + " ");
+				
+				
+			}
+		}
+		
+	}
+	
 }
