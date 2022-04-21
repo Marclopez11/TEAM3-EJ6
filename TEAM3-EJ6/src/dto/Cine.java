@@ -1,9 +1,10 @@
 package dto;
-
+//Eloi Martorell 
+//Marc Lopez
+//21/04/2022
 public class Cine {
 
-		//Marc Lopez
-		//21/04/2022
+		
 	private int precioEntrada = 7;
 
 	static private int[] filas = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
@@ -58,14 +59,9 @@ public class Cine {
 		
 		boolean cmdinero =  false;
 		if(dinero >= precioEntrada ) {
-			System.out.println("Tienes dinero para comprar la entrada!!");
 			cmdinero = true;
 			
-		}else {
-			System.out.println("Te falta dinero!!");
-			
 		}
-		
 		
 		return cmdinero;
 
@@ -78,14 +74,11 @@ public class Cine {
 		boolean cmedad =  false;
 		
 		if(edad >= p.getEdadMinima() ) {
-			System.out.println("Tienes la edad permitida para ver la pelicula!!");
 			cmedad = true;
-			
-		}else {
-			System.out.println("No tienes la edad necesaria!!");
 			
 		}
 
+		
 		
 		
 		return cmedad;

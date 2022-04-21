@@ -2,7 +2,9 @@ package dto;
 
 import java.util.Random;
 
-//@author Eloi Martorell 20/04/2022
+//Eloi Martorell 
+//Marc Lopez
+//21/04/2022
 
 public class Espectador {
 	
@@ -90,7 +92,7 @@ public class Espectador {
 
 	@Override
 	public String toString() {
-		return "Espectador [nombre=" + nombre + ", edad=" + edad + ", dinero=" + dinero + "]";
+		return   nombre + " tiene " + edad + " años, dispone de " + dinero + "€";
 	}
 
 	public String getNombre() {
