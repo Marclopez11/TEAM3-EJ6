@@ -92,25 +92,31 @@ public class Espectador {
 	public String toString() {
 		return "Espectador [nombre=" + nombre + ", edad=" + edad + ", dinero=" + dinero + "]";
 	}
-	
-	public static void buscarAsiento(Cine c, int espectadores) {
-		int[] filas = c.getFilas();
-		String[] columnas = { "AX", "BX", "CX", "DX", "EX", "FX", "GX", "HX", "IX" };
-		
-		int contador = 0;
-		
-		for (int i = 0; i < filas.length; i++) {
-			for (int j = 0; j < columnas.length; j++) {
-				if (columnas[j].charAt(0) == 'I') {
-					System.out.println("");
-				}
-				
-					System.out.print(filas[i] + columnas[j] + " ");
-				
-				
-			}
-		}
-		
+
+	public String getNombre() {
+		return nombre;
 	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
+	public int getDinero() {
+		return dinero;
+	}
+
+	public void setDinero(int dinero) {
+		this.dinero = dinero;
+	}
+	
+	
 	
 }

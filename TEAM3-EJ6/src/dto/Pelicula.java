@@ -2,6 +2,9 @@ package dto;
 
 public class Pelicula {
 	
+	//Eloi Martorell 
+		//Marc Lopez
+		//21/04/2022
 	
 	String titulo;
 	int duracion;

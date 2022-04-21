@@ -2,10 +2,12 @@ package dto;
 
 public class Cine {
 
+		//Marc Lopez
+		//21/04/2022
 	private int precioEntrada = 7;
 
-	private int[] filas = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-	private String[] columnas = { "A-", "B-", "C-", "D-", "E-", "F-", "G-", "H-", "I-" };
+	static private int[] filas = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+	static private String[] columnas = { "A-", "B-", "C-", "D-", "E-", "F-", "G-", "H-", "I-" };
 
 	public Cine(int precioEntrada) {
 		super();
@@ -88,6 +90,28 @@ public class Cine {
 		
 		return cmedad;
 
+	}
+	
+	public static void buscarAsiento(int espectadores) {
+		String[] columnasX = { "AX", "BX", "CX", "DX", "EX", "FX", "GX", "HX", "IX" };
+		int contador = 0;
+		
+		for (int i = 0; i < filas.length; i++) {
+			for (int j = 0; j < columnas.length; j++) {
+				if (columnas[j].charAt(0) == 'A') {
+					System.out.println("");
+
+				}
+				if(contador < espectadores) {
+					System.out.print(filas[i] + columnasX[j] + " ");
+					contador++;
+				}else {
+					System.out.print(filas[i] + columnas[j] + " ");
+				}
+				
+			}
+		}
+		
 	}
 
 }
